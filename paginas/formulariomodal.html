@@ -7,10 +7,105 @@
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
     <title>Formulario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
 </head>
-
+<header>
+    <nav>
+        <div class="formhead">
+        <div class="navbar">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><div class="imglogo"><img src="../imagenes/logo mise.jpg" alt="" width="30%"></div>MISE digital</a>
+              <!--la imagen debería ser mas tecno-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">MISE DIGITAL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/formulariomodal.html">Formulario</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NIVELES<i class='bx bxl-redux'></i>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">puto el que lee</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <div class="botonmargen">
+                  <button type="button" class="btn btn-primary"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+      Registrate</div>
+    </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </nav>
+</div>
+    <dir class="formulario">
+    <h1>REGISTRO<i class='bx bx-user-plus'></i></h1> 
+   <h3>Completa el formulario</h3>
+</header>
 <body>
+<main class="formulario">
+<form method="" action="">
+
+Nombre:<input type="text" name="Nombre" placeholder="tu nombre">
+<br>
+Apellido:<input type="text" name="Apellido" placeholder="tu apellido">
+<br>
+<br>
+Indique sexo:
+<br>
+Masculino:<input type="radio" name="Masc"><br>
+Femenino:<input type="radio" name="Fem"><br>
+otro:<input type="radio" name="otro"><br>
+
+<h3>Indicá tus consultas:</h3>
+<p><i>Recordá que podes elegir mas de una opción</i></p>
+<input type="checkbox" name="modasustentable">Moda sustentable<br>
+<input type="checkbox" name="Fibras">Fibras organicas<br>
+<input type="checkbox" name="Redu">Reducir y reciclar<br>
+<input type="checkbox" name="comu">Comunidad HONOLULU<br>
+<input type="checkbox" name="tempora">Tendencia mundial<br>
+<br>
+<br>
+Desde donde dejas tu huella
+<select id="pais" name="pais">
+<option value="arg">Argentina</option>
+<option value="bra">Brasil</option>
+<option value="Chi">Lo mira por tv</option>
+<option value="Uru">Uruguay</option>
+</select>
+<p>Comentanos algo</p>
+<textarea cols="15" rows="5" placeholder="tu huella" maxlength="50">
+</textarea>
+<br>
+<input type="submit" value="ENVIAR">
+<input type="reset" value="borrar">
+<br>
+
+</form>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     
 </body>
 </html>

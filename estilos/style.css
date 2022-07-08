@@ -21,3 +21,10 @@ transform: rotate(20deg);
 
     background-color: brown;
 }
+
+/*pagina formulario*/
+
+.formhead{
+    margin-top: 5%;
+    text-align: center;
+}
