@@ -1,6 +1,23 @@
 .navbar{
-    width: 59%;
+    width: 75%;
+}
+.navbar:hover{
+    border-color: rgb(188, 187, 236);
+    border-style: solid;
 }
 .navbar-brand{
     padding-right: 6%;
+}
+.botonmargen{
+    margin-left: 3%;
+    padding: 5%;
+    background-color: aquamarine;
+}
+
+.imglogo:hover{
+transform: rotate(20deg);
+}
+.banner:hover{
+
+    background-color: brown;
 }
