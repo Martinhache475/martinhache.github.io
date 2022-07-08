@@ -28,3 +28,8 @@ transform: rotate(20deg);
     margin-top: 5%;
     text-align: center;
 }
+
+.imgsize{
+    width: 300px;
+    margin-left: 400px;
+}
