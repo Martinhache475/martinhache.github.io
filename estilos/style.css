@@ -1,9 +1,5 @@
 .navbar{
-    width: 75%;
-}
-.navbar:hover{
-    border-color: rgb(188, 187, 236);
-    border-style: solid;
+    position:fixed;
 }
 .navbar-brand{
     padding-right: 6%;
@@ -14,22 +10,115 @@
     background-color: aquamarine;
 }
 
+.margen{
+    margin-top: 5%;
+}
 .imglogo:hover{
 transform: rotate(20deg);
 }
 .banner:hover{
 
     background-color: brown;
+
 }
 
+#flotante:hover{
+    background-color: rgb(94, 114, 206);
+}
+.titulos{
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(83, 25, 138);
+    margin-right: 3%;
+    float:left;
+}
+.titulos2{
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(27, 4, 48);
+    margin-right: 3%;
+    background-color: rgb(219, 220, 231);
+}
+.titulos3{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(27, 4, 48);
+    margin-right: 3%;
+    background-color: rgb(219, 220, 231);
+    font-size: 20px;
+}
+.texto1{
+    width:80%;
+    font-family:Verdana;
+    font-size:150%;
+    text-align:center;
+    padding: 3%;
+    align-items: center;
+}
+
+.box1{
+    display: flex;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+}
+
+.PODmise, .noti2, .noti3{
+    padding: 1%;
+    margin: 1%;
+    border-left: rgb(218, 207, 248);
+    border-width: 1px;
+    border-left:solid 1px  rgb(218, 207, 248);
+}
+
+
+.noti2{
+    border-left: rgb(218, 207, 248);
+    border-width: 1px;
+    border-left:solid 1px  rgb(218, 207, 248);
+    border-right-color: rgb(218, 207, 248);
+    border-width: 1px;
+    border-right-color:solid 1px  rgb(218, 207, 248);
+}
+.box3{
+display: flex;
+}
+/*imagenes dentro de las noticias*/
+.imgpodmise{
+margin-left: 10%;
+}
+.imgaspi{
+    margin-left: 30%;
+}
+#flotante{
+    float: left;
+    margin: 20px;
+    padding: 2%;
+}
+.facepm, .instapm, .mailpm{
+    font-size: 20px;
+}
+
+.face, .insta, .mail{
+    font-size: 36px;
+    margin: 2%;
+}
+
+.logorevdigital:hover{
+    transition: 2s ease-in;
+    transform: translateX(200px);
+    transform: rotate(75deg);
+    transform: scale(2);
+}
 /*pagina formulario*/
 
-.formhead{
-    margin-top: 5%;
-    text-align: center;
-}
 
-.imgsize{
-    width: 300px;
-    margin-left: 400px;
+.formulario{
+    margin-top: 10%;
+    text-align: center;
+    align-content: center;
+    background-color: #a9f4db;
+    
 }
