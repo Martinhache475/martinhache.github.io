@@ -21,7 +21,17 @@ transform: rotate(20deg);
     background-color: brown;
 
 }
-
+.imgsize{
+    width: 50%;
+    display:grid;
+    grid-template-columns: 100%;
+    align-content: center;
+}
+.centrado{
+    grid-column: 1/1;
+   
+    margin-left: 45%;
+}
 #flotante:hover{
     background-color: rgb(94, 114, 206);
 }
