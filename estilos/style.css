@@ -1,13 +1,19 @@
 .navbar{
+    margin-top: 40px;
     position:fixed;
+    z-index: 100;
 }
 .navbar-brand{
-    padding-right: 6%;
+    padding-right: 2%;
 }
-.botonmargen{
-    margin-left: 3%;
-    padding: 5%;
-    background-color: aquamarine;
+/*background color*/
+body{
+    background: linear-gradient(to bottom right, rgb(214, 231, 243), white);
+
+}
+img.banner{
+    width: 100%;
+   opacity: 90%;
 }
 
 .margen{
@@ -16,10 +22,8 @@
 .imglogo:hover{
 transform: rotate(20deg);
 }
-.banner:hover{
-
-    background-color: brown;
-
+.banner:hover
+{filter: saturate(300%);
 }
 .imgsize{
     justify-content: center;
@@ -88,10 +92,32 @@ transform: rotate(20deg);
     display: flex;
 }
 
+/*footer*/
 .box2{
     display: flex;
     justify-content: center;
 }
+.face, .insta, .mail, .wsp{
+    font-size: 36px;
+    margin: 2%;
+}
+
+.footeerconten{
+    display: flow-root;
+}
+.textofooter{
+    justify-content:  center;
+    text-align: center;
+    margin-top: -30px;
+    color: rgb(25, 25, 155);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.iconofooter{
+    font-size: 40px;
+    color: blueviolet;
+}
+
+
 
 .PODmise, .noti2, .noti3{
     padding: 1%;
@@ -129,10 +155,6 @@ margin-left: 10%;
     font-size: 20px;
 }
 
-.face, .insta, .mail{
-    font-size: 36px;
-    margin: 2%;
-}
 
 .logorevdigital:hover{
     transition: 2s ease-in;
@@ -186,4 +208,24 @@ border-bottom: 1px;
     width: 30%;
     flex-direction:column;
     padding: 2%;
+}
+
+/*dsiseño de separador del Navbar*/
+.separador{
+    margin-left: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.imgcalend{
+
+    margin-left: 30px;
+    font-size: 36px;
+}
+
+#luz:hover{
+    background-color: rgb(46, 62, 133);
+    border-width: 100;
+    border-color: aquamarine;
 }
