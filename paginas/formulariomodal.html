@@ -13,12 +13,12 @@
 </head>
 
 <header>
-  <div class="formulario">
+  <!--<div class="formulario">-->
     <nav>
       <div class="navbar">
       <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><div class="imglogo"><img src="../imagenes/logo mise.jpg" alt="" width="30%"></div>MISE digital</a>
+            <a class="navbar-brand" href="../index.html"><div class="imglogo"><img src="../imagenes/logo mise.jpg" alt="logomise" width="30%"></div>MISE digital</a>
             <!--la imagen debería ser mas tecno-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -26,33 +26,40 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../paginas/mision.html">MISION</a>
+                  <a class="nav-link active" aria-current="page" href="../../paginas/mision.html">MISION</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./paginas/formulariomodal.html">FORMULARIO</a>
+                  <a class="nav-link" href="../paginas/formulariomodal.html">FORMULARIO</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    NIVELES<i class='bx bxl-redux'></i>
+                    NIVELES<!--<i class='bx bxl-redux'>   </i>-->
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">INICIAL</a></li>
-                    <li><a class="dropdown-item" href="#">PRIMARIA</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">SUPERIOR</a></li>
+                    <li><a class="dropdown-item" href="../paginas/niveles/nivelinicial.html">INICIAL</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../paginas/niveles/nivelprimario.html">PRIMARIA</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../paginas/niveles/nivelsecundario.html">SUPERIOR</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled">SINCODIFICAR</a>
+                  <div class="separador"></div>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand" href="./niveles/calendacademico.html">
+                    <div class="imgcalend"><i class='bx bxs-component' id="luz"></i></div>Organigrama</a>
+                  <!--<a class="nav-link disabled"><a href="./paginas/niveles/calendacademico.html"><i class='bx bxs-calendar'></i></a></a>-->
                 </li>
               </ul>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscas algo..?</button>
+                <input class="form-control me-2" type="search" placeholder="Buscar " aria-label="Search">
+                <!--<button class="btn btn-outline-success" type="submit">Buscas algo..?</button>-->
                 <div class="botonmargen">
-                <button type="button" class="btn btn-primary"
-          style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-    Registrate</div>
-  </button>
+                  <button type="button" class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><div class="botonmargen">
+           <a href="./downloads.html"><i class='bx bx-download'></i></div></a>Descargas
+          </button>
               </form>
             </div>
           </div>
@@ -62,8 +69,8 @@
 <nav>
   <div class="nav1"></div>
 </nav>
-</div>
-    <dir class="formulario">
+<!--</div>-->
+    <div class="formulario">
     <h1>REGISTRO<i class='bx bx-user-plus'></i></h1> 
    <h3>Completa el formulario</h3>
 </header>
@@ -102,9 +109,9 @@ Indique sexo:
 <br>
 <h3>Indicá tus consultas:</h3>
 <p><i>NIVELES</i></p>
-<input type="checkbox" name="modasustentable">Ed INICIAL<br>
+<input type="checkbox" name="modasustentable" onclick="choice()">Ed INICIAL<br>
 <input type="checkbox" name="Fibras">Ed Primaria<br>
-<input type="checkbox" name="Redu">Ed Secundaria Basica<br>
+<input type="checkbox" name="Redu" onclick="choice()">Ed Secundaria Basica<br>
 <input type="checkbox" name="comu">Ed Secundaria Orientada<br>
 <br>
 <br>
@@ -112,11 +119,11 @@ Indique sexo:
 <br>
 <br>
 Elegí la zona de donde eres
-<select id="pais" name="pais">
-<option value="arg">San Nicolas</option>
-<option value="bra">La Emilia</option>
-<option value="Chi">Pdo Ramallo</option>
-<option value="Uru">Villa Constitucion</option>
+<select id="list" name="pais">
+<option value="arg" id="arg">San Nicolas</option>
+<option value="bra" id="bra">La Emilia</option>
+<option value="Chi" id="Chi">Pdo Ramallo</option>
+<option value="Uru" id="Uru">Villa Constitucion</option>
 </select>
 <br>
 <br>
@@ -124,10 +131,10 @@ Elegí la zona de donde eres
 <div class="linea"></div>
 <br>
 <p>Dudas</p>
-<textarea cols="70" rows="5" placeholder="tu comentario" maxlength="50">
+<textarea cols="70" rows="5" placeholder="tu comentario" maxlength="50" onclick="alerta()">
 </textarea>
 <br>
-<input type="submit" value="ENVIAR">
+<input type="submit" value="ENVIAR" onclick="send()">
 <input type="reset" value="borrar">
 <br><br>
 <div class="linea"></div>
@@ -143,12 +150,19 @@ Elegí la zona de donde eres
 
     <div class="insta"><a href="https://www.instagram.com/misericordiasn/" target="_blank"><i class='bx bxl-instagram'></i></a></div>
     <div class="mail"><a href="https://mail.google.com/" target="_blank"><i class='bx bx-envelope'></i></a></div>
+    <div class="wsp"><a href="https://api.whatsapp.com/send?phone=0123456789"" target="_blank"><i class='bx bxl-whatsapp'></i></a></div>
+    
+    
   </div>
+<div class="box2">
+  <div class="textofooter">Derechos reservados - Martin Harracá - 
+    <div class="iconofooter"><a href="../paginas/about/about.html"> <i class='bx bx-user-pin' ></i></a>
+   aboutMe</div></div>
+ </div>
  </footer>
-
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    
+<script src="../estilos/scripts.js"></script>
 </body>
 </html>
